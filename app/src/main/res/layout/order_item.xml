@@ -1,0 +1,37 @@
+<!-- res/layout/order_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/app_background"
+    android:layout_marginBottom="8dp">
+
+    <!-- Order ID TextView -->
+    <TextView
+        android:id="@+id/orderIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID: "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans_semibold"
+        android:paddingBottom="8dp" />
+
+    <!-- Order Items TextView (for multiple items with quantity) -->
+    <TextView
+        android:id="@+id/orderItemsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:maxLines="10"
+        android:ellipsize="end"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:lineSpacingExtra="2sp"/>
+
+</LinearLayout>
